@@ -11,7 +11,7 @@ import OrderInfoStep from "./Steps/OrderInfoStep";
 import RecipientInfoStep from "./Steps/RecipientInfoStepMoMo";
 import PaymentResultStep from "./Result/PaymentResultMoMo";
 
-const OnlineMoMo = () => {
+const OnlineMomo = () => {
   const [currentStep, setCurrentStep] = useState(1);
   const [transactionInfo, setTransactionInfo] = useState({});
   const [recipientInfo, setRecipientInfo] = useState({});
@@ -78,4 +78,4 @@ const OnlineMoMo = () => {
   );
 };
 
-export default OnlineMoMo;
+export default OnlineMomo;
