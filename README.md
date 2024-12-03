@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Website E-commerce - Quần Áo Nam Nữ và Trẻ Em
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Mô Tả Dự Án
 
-## Available Scripts
+Đây là một website bán sản phẩm quần áo nam, nữ và trẻ em, tích hợp các tính năng tiện ích cho người dùng và quản trị viên, giúp cải thiện trải nghiệm mua sắm trực tuyến.
 
-In the project directory, you can run:
+### Công Nghệ Sử Dụng:
+- **React.js**: Framework JavaScript cho việc phát triển giao diện người dùng.
+- **SCSS**: Sử dụng để viết CSS với cú pháp mạnh mẽ, giúp việc quản lý và tái sử dụng mã dễ dàng hơn.
+- **Bootstrap**: Thư viện CSS giúp phát triển giao diện nhanh chóng và responsive.
+- **Ant Design (antd)**: Thư viện UI React giúp tạo giao diện đẹp và dễ sử dụng.
+  
+### Tính Năng Người Dùng:
+- **Review Sản Phẩm**: Người dùng có thể đánh giá và bình luận sản phẩm.
+- **Thanh Toán Khi Nhận Hàng**: Tính năng hỗ trợ thanh toán khi nhận hàng.
+- **Thanh Toán Online**: Hỗ trợ thanh toán qua MoMo và ZaloPay.
+- **Phiếu Giảm Giá**: Cung cấp mã giảm giá cho khách hàng.
+- **Kiểm Tra Đơn Hàng**: Người dùng có thể kiểm tra trạng thái đơn hàng của mình.
+- **Xác Minh Khi Đăng Ký**: Quá trình xác minh khi người dùng đăng ký tài khoản mới.
+- **Gửi Email Khi Đặt Hàng hoặc Thanh Toán Thành Công**: Gửi email thông báo cho người dùng khi đặt hàng hoặc thanh toán thành công.
 
-### `npm start`
+### Tính Năng Admin:
+- **CRUD Sản Phẩm**: Quản trị viên có thể tạo, đọc, cập nhật và xóa sản phẩm.
+- **CRUD Người Dùng**: Quản trị viên có thể quản lý tài khoản người dùng.
+- **Tạo Mã Giảm Giá**: Quản trị viên có thể tạo mã giảm giá cho khách hàng.
+- **Xem Đơn Hàng**: Quản trị viên có thể xem tất cả đơn hàng của khách hàng.
+- **Bảng Thống Kê Sản Phẩm Bán Chạy**: Xem các sản phẩm bán chạy nhất, hỗ trợ xuất báo cáo CSV.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Cài Đặt
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone repository**:
+   ```bash
+   git clone https://github.com/socktow/Kuromi-FrontEnd
+   cd Kuromi-FrontEnd
+2. **BackEnd**
+   [Backend Kuromi]https://github.com/socktow/Kuromi-BackEnd
