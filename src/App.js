@@ -14,7 +14,7 @@ import CheckOrder from "./Components/CheckOrder/CheckOrder";
 import EmailVerify from "./Components/verify-email/verify-email";
 import OnlineZaloPay from "./Components/OnlinePayment/OnlineZaloPay";
 import OnlinePayment from "./Components/OnlinePayment/OnlinePayment";
-import OnlineMomo from "./Components/OnlinePayment/OnlineMomo";
+// import OnlineMomo from "./Components/OnlinePayment/OnlineMomo";
 
 // Admin
 import AdminLayout from "./layouts/AdminLayout";
@@ -71,7 +71,7 @@ function App() {
             </Route>
             <Route path="/CheckOrder" element={<CheckOrder />} />
             <Route path="/online-payment" element={<OnlinePayment />}/>
-            <Route path="/online-payment/momo" element={<OnlineMomo />}/>
+            {/* <Route path="/online-payment/momo" element={<OnlineMomo />}/> */}
             <Route path="/online-payment/zalopay" element={<OnlineZaloPay />} />
             <Route path="/email-verify" element={<EmailVerify />} />
           </Route>
