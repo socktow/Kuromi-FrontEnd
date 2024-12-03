@@ -33,4 +33,4 @@
    git clone https://github.com/socktow/Kuromi-FrontEnd
    cd Kuromi-FrontEnd
 2. ** Phần Backend**
-   (https://github.com/socktow/Kuromi-BackEnd)[BackEnd Kuromi]
+   (https://github.com/socktow/Kuromi-BackEnd) [BackEnd Kuromi]
