@@ -14,7 +14,6 @@ import CheckOrder from "./Components/CheckOrder/CheckOrder";
 import EmailVerify from "./Components/verify-email/verify-email";
 import OnlineZaloPay from "./Components/OnlinePayment/OnlineZaloPay";
 import OnlinePayment from "./Components/OnlinePayment/OnlinePayment";
-// import OnlineMomo from "./Components/OnlinePayment/OnlineMomo";
 
 // Admin
 import AdminLayout from "./layouts/AdminLayout";
@@ -43,7 +42,8 @@ import ProcessingOrder from "./layouts/AdminLayout/OrderData/ProcessingOrder";
 import PaidOrders from "./layouts/AdminLayout/PaymentStatus/PaidOrders";
 import PaidVNPAYOrders from "./layouts/AdminLayout/PaymentStatus/PaidVNPAYOrders";
 import PaidMoMoOrders from "./layouts/AdminLayout/PaymentStatus/PaidMoMoOrders";
-import OnlineMomo from "./Components/OnlinePayment/OnlineMomo";
+import OnlineMM from "./Components/OnlinePayment/OnlineMM";
+
 
 function App() {
   const dispatch = useDispatch();
@@ -72,8 +72,8 @@ function App() {
             </Route>
             <Route path="/CheckOrder" element={<CheckOrder />} />
             <Route path="/online-payment" element={<OnlinePayment />}/>
-            <Route Patch="online-payment/momo" element={<OnlineMomo />} />
             <Route path="/online-payment/zalopay" element={<OnlineZaloPay />} />
+            <Route path="/online-payment/momo" element={<OnlineMM />} />
             <Route path="/email-verify" element={<EmailVerify />} />
           </Route>
           {/* Admin */}
