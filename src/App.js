@@ -43,6 +43,7 @@ import ProcessingOrder from "./layouts/AdminLayout/OrderData/ProcessingOrder";
 import PaidOrders from "./layouts/AdminLayout/PaymentStatus/PaidOrders";
 import PaidVNPAYOrders from "./layouts/AdminLayout/PaymentStatus/PaidVNPAYOrders";
 import PaidMoMoOrders from "./layouts/AdminLayout/PaymentStatus/PaidMoMoOrders";
+import OnlineMomo from "./Components/OnlinePayment/OnlineMomo";
 
 function App() {
   const dispatch = useDispatch();
@@ -71,7 +72,7 @@ function App() {
             </Route>
             <Route path="/CheckOrder" element={<CheckOrder />} />
             <Route path="/online-payment" element={<OnlinePayment />}/>
-            {/* <Route path="/online-payment/momo" element={<OnlineMomo />}/> */}
+            <Route Patch="online-payment/momo" element={<OnlineMomo />} />
             <Route path="/online-payment/zalopay" element={<OnlineZaloPay />} />
             <Route path="/email-verify" element={<EmailVerify />} />
           </Route>
