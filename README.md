@@ -1,36 +1,157 @@
-# Website E-commerce - Quần Áo Nam Nữ và Trẻ Em
+# Kuromi Store Frontend
 
-## Mô Tả Dự Án
+## Introduction
+Kuromi Store Frontend is a modern e-commerce web application built with React.js, offering a seamless shopping experience for men's, women's, and children's clothing. The application features a responsive design, intuitive user interface, and integration with multiple payment gateways.
 
-Đây là một website bán sản phẩm quần áo nam, nữ và trẻ em, tích hợp các tính năng tiện ích cho người dùng và quản trị viên, giúp cải thiện trải nghiệm mua sắm trực tuyến.
+## Libraries & Dependencies
 
-### Công Nghệ Sử Dụng:
-- **React.js**: Framework JavaScript cho việc phát triển giao diện người dùng.
-- **SCSS**: Sử dụng để viết CSS với cú pháp mạnh mẽ, giúp việc quản lý và tái sử dụng mã dễ dàng hơn.
-- **Bootstrap**: Thư viện CSS giúp phát triển giao diện nhanh chóng và responsive.
-- **Ant Design (antd)**: Thư viện UI React giúp tạo giao diện đẹp và dễ sử dụng.
+### Core Technologies
+- **React** (^18.3.1) - Frontend framework
+- **React Router** (^6.23.0) - Routing
+- **Redux Toolkit** (^2.2.4) - State management
+- **Axios** (^1.6.8) - HTTP client
 
-### Tính Năng Người Dùng:
-- **Review Sản Phẩm**: Người dùng có thể đánh giá và bình luận sản phẩm. ![Review Icon](https://path-to-your-image/review-icon.png)
-- **Thanh Toán Khi Nhận Hàng**: Tính năng hỗ trợ thanh toán khi nhận hàng. ![Cash on Delivery Icon](https://path-to-your-image/cash-on-delivery-icon.png)
-- **Thanh Toán Online**: Hỗ trợ thanh toán qua MoMo và ZaloPay. ![MoMo Icon](https://path-to-your-image/momo-icon.png)
-- **Phiếu Giảm Giá**: Cung cấp mã giảm giá cho khách hàng. ![Discount Icon](https://path-to-your-image/discount-icon.png)
-- **Kiểm Tra Đơn Hàng**: Người dùng có thể kiểm tra trạng thái đơn hàng của mình. ![Order Check Icon](https://path-to-your-image/order-check-icon.png)
-- **Xác Minh Khi Đăng Ký**: Quá trình xác minh khi người dùng đăng ký tài khoản mới. ![Verification Icon](https://path-to-your-image/verification-icon.png)
-- **Gửi Email Khi Đặt Hàng hoặc Thanh Toán Thành Công**: Gửi email thông báo cho người dùng khi đặt hàng hoặc thanh toán thành công. ![Email Icon](https://path-to-your-image/email-icon.png)
+### UI Components & Styling
+- **Ant Design** (^5.17.0) - UI component library
+- **Bootstrap** (^5.3.3) - CSS framework
+- **SASS** (^1.76.0) - CSS preprocessor
+- **Font Awesome** (^6.5.2) - Icon library
 
-### Tính Năng Admin:
-- **CRUD Sản Phẩm**: Quản trị viên có thể tạo, đọc, cập nhật và xóa sản phẩm. ![Product Icon](https://path-to-your-image/product-icon.png)
-- **CRUD Người Dùng**: Quản trị viên có thể quản lý tài khoản người dùng. ![User Icon](https://path-to-your-image/user-icon.png)
-- **Tạo Mã Giảm Giá**: Quản trị viên có thể tạo mã giảm giá cho khách hàng. ![Discount Code Icon](https://path-to-your-image/discount-code-icon.png)
-- **Xem Đơn Hàng**: Quản trị viên có thể xem tất cả đơn hàng của khách hàng. ![Orders Icon](https://path-to-your-image/orders-icon.png)
-- **Bảng Thống Kê Sản Phẩm Bán Chạy**: Xem các sản phẩm bán chạy nhất, hỗ trợ xuất báo cáo CSV. ![Sales Stats Icon](https://path-to-your-image/sales-stats-icon.png)
+### State Management & Data Handling
+- **Redux Thunk** (^3.1.0) - Async actions
+- **Moment.js** (^2.30.1) - Date handling
+- **Recharts** (^2.12.7) - Data visualization
+- **XLSX** (^0.18.5) - Excel file handling
 
-## Cài Đặt
+### Authentication & Security
+- **JWT** (^9.0.2) - Authentication
+- **Firebase** (^10.12.2) - Backend services
+- **bcryptjs** (^2.4.3) - Password hashing
 
-1. **Clone repository**:
+## Setup Instructions
+
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/socktow/Kuromi-FrontEnd
    cd Kuromi-FrontEnd
-2. **Phần Backend**
-   (https://github.com/socktow/Kuromi-BackEnd) [BackEndKuromi]
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Environment Configuration:**
+   Create a `.env` file in the root directory with the following variables:
+   ```
+   REACT_APP_API_URL=http://localhost:4000
+   REACT_APP_FIREBASE_API_KEY=your_firebase_api_key
+   REACT_APP_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
+   ```
+
+4. **Start the development server:**
+   ```bash
+   npm start
+   ```
+
+5. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+## Project Structure
+
+```
+src/
+├── components/     # Reusable UI components
+├── pages/         # Page components
+├── redux/         # Redux store and slices
+├── services/      # API services
+├── utils/         # Utility functions
+├── assets/        # Static assets
+└── styles/        # Global styles and themes
+```
+
+## Features
+
+### User Interface
+- Responsive design for all devices
+- Modern and intuitive navigation
+- Product filtering and search
+- Shopping cart functionality
+- User profile management
+
+### Authentication
+- User registration and login
+- Email verification
+- Password recovery
+- Social media authentication
+
+### Shopping Experience
+- Product catalog with categories
+- Detailed product views
+- Shopping cart management
+- Order tracking
+- Wishlist functionality
+
+### Payment Integration
+- Momo payment gateway
+- Zalo payment gateway
+- Order confirmation
+- Payment status tracking
+
+### Admin Dashboard
+- Product management
+- Order management
+- User management
+- Analytics and reporting
+- Voucher system management
+
+## Customization
+
+### Styling
+- Modify `src/styles/` for global styles
+- Use SASS variables for theming
+- Customize Ant Design components
+
+### Components
+- Create new components in `src/components/`
+- Follow the existing component structure
+- Use TypeScript for type safety
+
+### API Integration
+- Update API endpoints in `src/services/`
+- Modify Redux actions and reducers
+- Handle API responses and errors
+
+## Performance Optimization
+- Code splitting
+- Lazy loading
+- Image optimization
+- Caching strategies
+
+## Testing
+```bash
+# Run tests
+npm test
+
+# Run tests with coverage
+npm test -- --coverage
+```
+
+## Deployment
+1. Build the application:
+   ```bash
+   npm run build
+   ```
+2. Deploy the `build` folder to your hosting service
+
+## Contributing
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a new Pull Request
+
+## License
+ISC License
